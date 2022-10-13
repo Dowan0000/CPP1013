@@ -1,9 +1,17 @@
 #include "Wall.h"
 
-FWall::FWall()
+AWall::AWall()
 {
+	Shape = '*';
 }
 
-FWall::~FWall()
+AWall::AWall(int NewX, int NewY)
+	: AWall()
+{
+	X = NewX;
+	Y = NewY;
+}
+
+AWall::~AWall()
 {
 }
